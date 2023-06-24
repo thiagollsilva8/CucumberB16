@@ -1,0 +1,7 @@
+class 1 -
+    After creating a maven project and added all the dependencies now we are going to write gherkin test case
+    in cucumber project.
+
+    Every single test case will be considered as one scenario
+
+    -- we write scenario in feature file in cucumber.
