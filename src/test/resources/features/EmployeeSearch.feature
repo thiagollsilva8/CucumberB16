@@ -1,7 +1,7 @@
 Feature: Search an employee
 
   Background:
-    #Given user is navigated to HRMS application
+    # Given user is navigated to HRMS application
     * user enters valid admin username and password
     * user clicks on login button
     * user is successfully logged in the application

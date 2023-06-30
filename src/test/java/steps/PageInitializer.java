@@ -13,6 +13,7 @@ public class PageInitializer {
     public static EmployeeSearchPage employeeSearchPage;
 
     public static void initializePageObjects() {
+
         loginPage = new LoginPage();
         dashboardPage = new DashboardPage();
         addEmployeePage = new AddEmployeePage();

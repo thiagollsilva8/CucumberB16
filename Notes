@@ -147,7 +147,24 @@ test cases with different names so that it will not be overridden
 screenshot method in cucumber - here it accepts array of byte for pictures
 
 POM - page object model design pattern
-for every screen/page in the application, we create a separate  class for it and
+for every screen/page in the application, we create a separate class for it and
 keep all the locators/WebElements of this page in this class and we create a key of
 locators which we will pass in every step.
+
+class 5 -
+recap -
+test runner class -
+
+POM - page object model design pattern -
+
+framework characteristics -
+
+it should be easily understandable
+it should be expandable
+it should be easy to maintain
+
+we created loginpage, employeesearchpage, dashboardpage, addemployeepage
+
+data driven testing - when your one test case executes against multiple set of data
+
 

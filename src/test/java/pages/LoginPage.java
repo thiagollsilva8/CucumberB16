@@ -7,7 +7,7 @@ import utils.CommonMethods;
 
 public class LoginPage extends CommonMethods {
 
-    //this is object repository of POM
+    // this is object repository of POM
     @FindBy(xpath = "//*[@id='txtUsername']")
     public WebElement usernameField;
 
@@ -17,8 +17,9 @@ public class LoginPage extends CommonMethods {
     @FindBy(id = "btnLogin")
     public WebElement loginButton;
 
-    //to initialize all the elements of this page we have to call them inside constructor
+    // to initialize all the elements of this page we have to call them inside constructor
     public LoginPage() {
+
         PageFactory.initElements(driver, this);
     }
 }

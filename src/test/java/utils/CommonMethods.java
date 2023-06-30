@@ -23,6 +23,7 @@ public class CommonMethods extends PageInitializer {
     public static WebDriver driver;
 
     public static void openBrowserAndNavigateToURL() {
+
         ConfigReader.readProperties(Constants.CONFIG_READER_PATH);
         switch (ConfigReader.getPropertyValue("browser")) {
             case "chrome":
@@ -32,9 +33,11 @@ public class CommonMethods extends PageInitializer {
                 driver = new FirefoxDriver();
                 break;
         }
+
         driver.manage().window().maximize();
         driver.get(ConfigReader.getPropertyValue("url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
         // this method is going to initialize all the objects available inside this method
         initializePageObjects();
     }
@@ -83,8 +86,8 @@ public class CommonMethods extends PageInitializer {
     public static byte[] takeScreenshot(String fileName) {
 
         TakesScreenshot ts = (TakesScreenshot) driver;
-        // we write this line because cucumber accepts an array of byte for screenshot
 
+        // we write this line because cucumber accepts an array of byte for screenshot
         byte[] picBytes = ts.getScreenshotAs(OutputType.BYTES);
         File screenShot = ts.getScreenshotAs(OutputType.FILE);
         //in case if it doesn't find file name or path, it will throw an exception
