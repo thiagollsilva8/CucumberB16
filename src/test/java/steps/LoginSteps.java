@@ -3,6 +3,7 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
 import org.apache.log4j.xml.DOMConfigurator;
 import org.junit.Assert;
 import utils.CommonMethods;
@@ -19,10 +20,12 @@ public class LoginSteps extends CommonMethods {
 
         // to launch Chrome browser
         openBrowserAndNavigateToURL();
-        // driver = new ChromeDriver();
-        // driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
-        // driver.manage().window().maximize();
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        /*
+        driver = new ChromeDriver();
+        driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        */
     }
 
     @When("user enters valid admin username and password")
